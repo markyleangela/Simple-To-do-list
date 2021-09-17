@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/cd12a506f9.js" crossorigin="anonymous"></script>
+	    <title>MAR TODO LIST</title>
+    </head>
+    <body>
+        
+        <div class="headerTotask">
+            <header>TODO LIST</header>
+            <br>
+            <div>
+                <input type="text" class="txt-add" placeholder="Add new item">
+                <button type="button" class="btn-add"><i class="fas fa-plus-circle"></i></button>
+                <!-- <input type="button" class="btn-add" value="+" > -->
+            </div>
+            <br>
+            
+            <div class="list-todo">
+                <div class="todo-item">
+                    <input type="checkbox" >
+                    <input type="text" class="txt-item" value="Read Book">
+                    
+                    <button type="button"><i class="fas fa-edit"></i></button>
+                    <button type="button"><i class="fas fa-minus-circle"></i></button>
+                </div>
+                
+
+                <div class="todo-item">
+                    <input type="checkbox" checked>
+                    <input type="text" class="txt-item todo-done" value="Learn Programming" readonly>
+                    <button type="button"><i class="fas fa-edit"></i></button>
+                    <button type="button"><i class="fas fa-minus-circle"></i></button>
+                </div>
+
+                <div class="todo-item">
+                    <input type="checkbox" >
+                    <input type="text" class="txt-item" value="Wash the dishes" readonly>
+                    <button type="button"><i class="fas fa-edit"></i></button>
+                    <button type="button"><i class="fas fa-minus-circle"></i></button>
+                </div>
+
+            </div>
+            
+            <br>
+            <div class="footer">
+                <div class="progress-bar">1 of 2 tasks done
+                </div>
+                <br>
+                <input class="btn-rmv" type="button" value="Clear Checked">
+                </div>
+              </div>
+        </div>
+
+              
+        </div>
+
+        <style type="text/css">
+            
+body{
+    background-color:#679267 ;
+    height: 100px;
+}
+
+.headerTotask{
+    
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 10%;
+margin-left: 30%;
+width: 30%;
+background-color: white;
+padding: 30px 40px 50px 50px;
+
+
+}
+
+.headerTotask header{
+    font-size: 50px ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold ;
+    text-align: center;
+}
+
+.txt-add{
+    position: relative;
+    top: -6px;
+    height: 25px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 72%;
+    padding: 5px 20px 5px 5px ;    
+}
+
+.btn-add{
+    cursor: pointer;
+    width: 60px;
+    background-color: #ACDF87;
+    padding: 3px 5px 3px 5px;
+    border-radius: 5px;
+    
+}
+
+.btn-add:hover{
+    background-color: grey;
+}
+
+.fa-plus-circle{
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.fa-edit{
+    cursor: pointer;
+    /* width: 50%; */
+    font-size: 15px;
+    padding: 5px 0 5px 0;
+}
+
+.fa-minus-circle{
+    cursor: pointer;
+    /* width: 10%; */
+    font-size: 15px;
+    padding: 5px 0 5px 0;
+    color: #ED2939;
+}
+
+.todo-item button{
+    width: 7%;
+    background-color: #ACDF87;
+    border: 0;
+    padding: 0 0 0 0;
+}
+
+.todo-item button:hover{
+    background-color: #728c69;
+}
+
+.txt-item{
+    border: 0;
+    width: 75%;
+    font-size: 18px;
+    font-family: monospace, 'Monaco';
+    
+    background-color:#ACDF87;
+}
+
+.todo-done{
+    text-decoration: line-through;
+}
+
+.progress-bar {
+    padding-left: 30%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 65%;
+    font-size: 15px;
+    border: 1px solid #000;
+    background: linear-gradient(to right, #B0fc38 50%, white 50%);
+  }
+
+.btn-rmv{
+    cursor: pointer;
+    margin-left: 35%;
+    font-size: 15px;
+    border: outset 2px;
+    border-radius: 5px;
+}
+
+.btn-rmv:hover{
+    background-color:#ED2939 ;
+}
+
+.todo-item{
+    border: outset 1px gray;
+    width: 95%;
+    margin-top: 2px;
+    border-radius: 5px;
+    background-color:#ACDF87;
+}
+
+.btn-edit{
+    padding: 5px 5px 5px 5px;
+}
+
+.btn-dlt{
+    padding: 5px 5px 5px 5px;
+}
+}
+        </style>
+        
+    </body>
+</html>
